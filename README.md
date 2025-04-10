@@ -79,25 +79,28 @@ The reporter supports several configuration options:
 
 ```javascript
 reporter: [
-  ['@d2t/vitest-ctrf-json-reporter', {
-    outputFile: 'custom-name.json', // Optional: Output file name. Defaults to 'ctrf-report.json'.
-    outputDir: 'custom-directory',  // Optional: Output directory path. Defaults to 'ctrf'.
-    minimal: true,                  // Optional: Generate a minimal report. Defaults to 'false'. Overrides screenshot and testType when set to true
-    testType: 'unit',                // Optional: Specify the test type (e.g., 'unit', 'component'). Defaults to 'unit'.
-    appName: 'MyApp',               // Optional: Specify the name of the application under test.
-    appVersion: '1.0.0',            // Optional: Specify the version of the application under test.
-    osPlatform: 'linux',            // Optional: Specify the OS platform.
-    osRelease: '18.04',             // Optional: Specify the OS release version.
-    osVersion: '5.4.0',             // Optional: Specify the OS version.
-    buildName: 'MyApp Build',       // Optional: Specify the build name.
-    buildNumber: '100',             // Optional: Specify the build number.
-    buildUrl: "https://ctrf.io",    // Optional: Specify the build url.
-    repositoryName: "ctrf-json",    // Optional: Specify the repository name.
-    repositoryUrl: "https://gh.io", // Optional: Specify the repository url.
-    branchName: "main",             // Optional: Specify the branch name.
-    testEnvironment: "staging"      // Optional: Specify the test environment (e.g. staging, production).
-  }]
-],
+  [
+    '@d2t/vitest-ctrf-json-reporter',
+    {
+      outputFile: 'custom-name.json', // Optional: Output file name. Defaults to 'ctrf-report.json'.
+      outputDir: 'custom-directory', // Optional: Output directory path. Defaults to 'ctrf'.
+      minimal: true, // Optional: Generate a minimal report. Defaults to 'false'. Overrides screenshot and testType when set to true
+      testType: 'unit', // Optional: Specify the test type (e.g., 'unit', 'component'). Defaults to 'unit'.
+      appName: 'MyApp', // Optional: Specify the name of the application under test.
+      appVersion: '1.0.0', // Optional: Specify the version of the application under test.
+      osPlatform: 'linux', // Optional: Specify the OS platform.
+      osRelease: '18.04', // Optional: Specify the OS release version.
+      osVersion: '5.4.0', // Optional: Specify the OS version.
+      buildName: 'MyApp Build', // Optional: Specify the build name.
+      buildNumber: '100', // Optional: Specify the build number.
+      buildUrl: 'https://ctrf.io', // Optional: Specify the build url.
+      repositoryName: 'ctrf-json', // Optional: Specify the repository name.
+      repositoryUrl: 'https://gh.io', // Optional: Specify the repository url.
+      branchName: 'main', // Optional: Specify the branch name.
+      testEnvironment: 'staging', // Optional: Specify the test environment (e.g. staging, production).
+    },
+  ],
+]
 ```
 
 ## Test Object Properties
