@@ -19,6 +19,10 @@
     "access": "public",
     "provenance": true
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/david2tm/d2t-vitest-ctrf-json-reporter"
+  },
   "author": "David Ichilov",
   "license": "MIT",
   "devDependencies": {
