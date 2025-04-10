@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    versioning-strategy: 'increase'
+    commit-message:
+      prefix: '🤖 [Dependabot]'
+    open-pull-requests-limit: 1
+    allow:
+      - dependency-type: 'production'
+      - dependency-type: 'development'
+    groups:
+      all-dependencies:
+        patterns:
+          - '*'

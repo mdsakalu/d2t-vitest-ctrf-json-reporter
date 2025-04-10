@@ -1,0 +1,37 @@
+{
+  "name": "@d2t/vitest-ctrf-json-reporter",
+  "version": "0.0.1",
+  "description": "A Vitest test reporter to create test results reports",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "lint-check": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "format-check": "prettier --check ."
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "author": "David Ichilov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "@vitest/runner": "^3.1.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.3",
+    "semantic-release": "^24.2.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1",
+    "vitest": "^3.1.1"
+  }
+}
