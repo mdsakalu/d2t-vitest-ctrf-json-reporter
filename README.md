@@ -62,7 +62,7 @@ npm install --save-dev @d2t/vitest-ctrf-json-reporter
 Add the reporter to your vitest.config.js file:
 
 ```javascript
-reporters: ['default', ['vitest-ctrf-json-reporter', {}]]
+reporters: ['default', ['@d2t/vitest-ctrf-json-reporter', {}]]
 ```
 
 Run your tests:
@@ -79,7 +79,7 @@ The reporter supports several configuration options:
 
 ```javascript
 reporter: [
-  ['vitest-ctrf-json-reporter', {
+  ['@d2t/vitest-ctrf-json-reporter', {
     outputFile: 'custom-name.json', // Optional: Output file name. Defaults to 'ctrf-report.json'.
     outputDir: 'custom-directory',  // Optional: Output directory path. Defaults to 'ctrf'.
     minimal: true,                  // Optional: Generate a minimal report. Defaults to 'false'. Overrides screenshot and testType when set to true
