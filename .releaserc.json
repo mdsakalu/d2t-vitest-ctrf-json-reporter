@@ -9,8 +9,8 @@
       {
         "assets": [
           {
-            "path": "d2t-vitest-ctrf-json-reporter-dist.tar.gz",
-            "name": "d2t-vitest-ctrf-json-reporter-${nextRelease.version}-dist.tar.gz"
+            "path": "d2t-vitest-ctrf-json-reporter-*.tgz",
+            "name": "d2t-vitest-ctrf-json-reporter-${nextRelease.version}.tgz"
           },
           {
             "path": "package.json",
@@ -20,7 +20,9 @@
             "path": "README.md",
             "label": "Documentation"
           }
-        ]
+        ],
+        "successComment": false,
+        "failComment": false
       }
     ],
     [

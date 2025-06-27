@@ -7,6 +7,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && node ./build/esbuild.js",
+    "pack": "npm pack",
+    "prepare-release": "npm run build && npm run pack",
     "lint": "eslint . --fix",
     "lint-check": "eslint . --max-warnings=0",
     "format": "prettier --write .",
